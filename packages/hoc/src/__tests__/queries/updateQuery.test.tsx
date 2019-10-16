@@ -56,7 +56,7 @@ describe('[queries] updateQuery', () => {
     );
   });
 
-  it('exposes updateQuery as part of the props api during componentWillMount', done => {
+  it('exposes updateQuery as part of the props api during UNSAFE_UNSAFE_componentWillMount', done => {
     const query: DocumentNode = gql`
       query people {
         allPeople(first: 1) {

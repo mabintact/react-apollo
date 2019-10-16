@@ -29,7 +29,7 @@ const variables = { episode: 'NEWHOPE' };
 describe('withCharacter', () => {
   it('shapes the props into variables', done => {
     class Container extends React.Component {
-      componentWillMount() {
+      UNSAFE_UNSAFE_componentWillMount() {
         try {
           expect(this.props.variables).toEqual(variables);
           done();
@@ -54,7 +54,7 @@ describe('withCharacter', () => {
   });
   it('reshapes the data into the passed props', done => {
     class Container extends React.Component {
-      componentWillReceiveProps(next) {
+      UNSAFE_UNSAFE_componentWillReceiveProps(next) {
         try {
           expect(next.hero).toEqual(hero_no_friends);
           done();
@@ -84,10 +84,10 @@ describe('withCharacter', () => {
   });
   it('has a loading state', done => {
     class Container extends React.Component {
-      componentWillMount() {
+      UNSAFE_UNSAFE_componentWillMount() {
         expect(this.props.loading).toBe(true);
       }
-      componentWillReceiveProps(next) {
+      UNSAFE_UNSAFE_componentWillReceiveProps(next) {
         expect(next.loading).toBe(false);
         done();
       }
@@ -113,10 +113,10 @@ describe('withCharacter', () => {
   });
   it('has a potential error state', done => {
     class Container extends React.Component {
-      componentWillMount() {
+      UNSAFE_UNSAFE_componentWillMount() {
         expect(this.props.loading).toBe(true);
       }
-      componentWillReceiveProps(next) {
+      UNSAFE_UNSAFE_componentWillReceiveProps(next) {
         expect(next.loading).toBe(false);
         expect(next.error.message).toMatch(/these are not the droids you are looking for/);
         done();

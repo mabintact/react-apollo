@@ -583,7 +583,7 @@
   be used to register callback functions that are to be executed after a
   query successfully completes, or an error occurs.
   [@jeshep](https://github.com/jeshep) in [#1922](https://github.com/apollographql/react-apollo/pull/1922)
-- Add `UNSAFE_componentWillMount` SSR support.
+- Add `UNSAFE_UNSAFE_UNSAFE_componentWillMount` SSR support.
   [@leops](https://github.com/leops) in [#2152](https://github.com/apollographql/react-apollo/pull/2152)
 - Clear out scheduler on MockedProvider unmount.
   [@danilobuerger](https://github.com/danilobuerger) in [#2151](https://github.com/apollographql/react-apollo/pull/2151)
@@ -948,7 +948,7 @@
 ### 0.13.3
 
 - Make sure that the cached rendered element has the correct type before returning it. [PR #505](https://github.com/apollographql/react-apollo/pull/505)
-- Move constructor initializing of props to componentWillMount. [PR #506](https://github.com/apollographql/react-apollo/pull/506) ([Issue #509](https://github.com/apollographql/react-apollo/issues/509)).
+- Move constructor initializing of props to UNSAFE_UNSAFE_componentWillMount. [PR #506](https://github.com/apollographql/react-apollo/pull/506) ([Issue #509](https://github.com/apollographql/react-apollo/issues/509)).
 
 ### 0.13.2
 
@@ -1119,7 +1119,7 @@ This release refactors the server side rendering and data access code, hopefully
 
 ### v0.5.5
 
-- Bug: Fixed lifecycle events for componentWillMount() on the server [#205](https://github.com/apollostack/react-apollo/pull/205)
+- Bug: Fixed lifecycle events for UNSAFE_UNSAFE_componentWillMount() on the server [#205](https://github.com/apollostack/react-apollo/pull/205)
 
 ### v0.5.4
 
@@ -1127,7 +1127,7 @@ This release refactors the server side rendering and data access code, hopefully
 
 ### v0.5.3
 
-- Bug: Fixed issue with updateQuery not being present during componentWillMount [#203](https://github.com/apollostack/react-apollo/pull/203)
+- Bug: Fixed issue with updateQuery not being present during UNSAFE_UNSAFE_componentWillMount [#203](https://github.com/apollostack/react-apollo/pull/203)
 
 ### v0.5.2
 
