@@ -1,13 +1,14 @@
 {
-  "name": "react-apollo",
-  "version": "2.5.8",
-  "author": "opensource@apollographql.com",
-  "private": true,
+  "name": "@teamteddybear/react-apollo-unsafe",
+  "version": "2.5.9",
+  "author": "Marc-Andre.Boutin@intact.net",
+  "private": false,
   "description": "React data container for Apollo Client",
   "keywords": [
     "apollo",
     "graphql",
-    "react"
+    "react",
+    "unsafe"
   ],
   "license": "MIT",
   "main": "lib/react-apollo.cjs.js",
@@ -18,7 +19,7 @@
   "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "apollographql/react-apollo"
+    "url": "git+https://github.com/mabintact/react-apollo.git"
   },
   "scripts": {
     "compile": "tsc -p ./tsconfig.cjs.json",
@@ -172,5 +173,13 @@
     "prop-types": "^15.7.2",
     "ts-invariant": "^0.4.2",
     "tslib": "^1.9.3"
+  },
+  "bugs": {
+    "url": "https://github.com/mabintact/react-apollo/pulls"
+  },
+  "homepage": "https://github.com/mabintact/react-apollo#readme",
+  "directories": {
+    "example": "examples",
+    "test": "test"
   }
 }
